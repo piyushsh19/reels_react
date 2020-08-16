@@ -14,7 +14,34 @@ html{
   text-align: center;
 }
 
+.app__top{
+  margin-bottom: -150px;
+}
+
 
 .app__logo{
   height: 12vh;
+}
+
+.app__videos {
+  position: relative;
+  height: 65vh;
+  background-color: white;
+  width: 70%;
+  border-radius: 20px ;
+  max-width: 450px;
+  max-height: 1200px;
+  overflow: scroll ;
+  scroll-snap-type: y mandatory;
+}
+
+ /*hide scrollbar for chrome ,safari and opera-*/
+ .app__videos::-webkit-scrollbar{
+  display: none;
+}
+
+/* hide scrollbar for IE, Edge and Firefox */
+.app__videos{
+ -ms-overflow-style: none;
+ scrollbar-width: none;
 }
